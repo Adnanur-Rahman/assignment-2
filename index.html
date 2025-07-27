@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Document</title>
-    <style>
-        a{text-decoration: none;}
+<style>
+body{margin:0px;}
+a{text-decoration: none;}
   .pri{color:#E95A08;}
   .sec{color:#000000;}
   .thr{color: rgba(0, 0, 0, 0.5);
@@ -25,17 +26,20 @@
   align-items: center;
   gap:10px;
 }
- .ban{
+  .ban{
     text-align:left;
-    padding:10px 10px;
-    margin:10px 40px;
+    justify-content: center;
     font-size: 30px;
   }
   .ban img{
       width:100%;
     height:100%;
   }
-    .card{
+  .our-part{
+text-align:center;
+font-size:30px
+  }
+  .card{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:5px;
@@ -60,15 +64,13 @@
   .car img{
     width:100%;
   }
-    .cha{
-    border:1px solid tomato;
+  .cha{
     display:flex;
     margin:0 auto;
     width:100%;
     font-size:1.8rem;
     gap:3.1rem;
     max-width:62.5rem;
-    
   }
 
   .im{
@@ -76,9 +78,9 @@
     top:6rem;
     left: 28rem;
     z-index: 1;
-    
   }
-    .im img{
+  
+  .im img{
     width:12.5rem;
     height:12.5rem;
   }
@@ -92,6 +94,7 @@
 .deal{
   text-align:center;
   font-size:30px;
+  margin-bottom: 20px;
 }
 .pla{
   padding-right: 20px;
@@ -102,16 +105,15 @@
 }
 .b-0{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
+  grid-template-columns:18.7rem 31.25rem;
   gap:30px;
-  width:100%;
-  margin:0px auto;
+  justify-content: center;
   text-align: center;
   color:white;
   margin-bottom: 10px;
-  height:300px;
+  height:18.7rem;
 }
-.b-0 > h2,p{
+.b-0 h2,.b-0 p{
   margin: 0px;
   padding:0px;
 }
@@ -122,6 +124,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(90%);
+  align-content: center;
 }
 .b-3{
   border:1px solid tomato;
@@ -131,6 +134,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(90%);
+align-content: center;
 }
 .b-2{
   background-image: url('deal-zabo.png');
@@ -141,15 +145,13 @@
   background-size: cover;
   filter: brightness(90%);
 }
-  .our-part{
-text-align:center;
-font-size:30px
-  }
 .fo{
   background-image: url('news-letter-bg.png');
   text-align: center;
   color:white;
-  padding:20px 0px;
+  padding:80px 0px;
+  width:100%;
+  margin:0px!important;
 }
 .ba{
   background-color:#E95A08;
@@ -157,7 +159,10 @@ font-size:30px
 }
 .in{
   margin:0px;
-  padding:0px;
+  padding:10px 30px;
+}
+input[type="email"]{
+  width:35rem;
 }
 .fot{
   list-style: none;
@@ -172,7 +177,8 @@ font-size:30px
 .la img{
   padding:0px 10px;
 }
- @media screen and (max-width:576px)
+
+  @media screen and (max-width:576px)
   {
     .nvar2{
       display:none;
@@ -184,7 +190,12 @@ font-size:30px
       margin:10px;
     }
     .our-part{
-      font-size: 1rem;
+      font-size:1rem;
+      
+    }
+    .prb{
+      max-width:576px;
+      margin:1.2rem;
     }
     .card{
     display:grid;
@@ -207,27 +218,43 @@ font-size:30px
 }
 
   .deal{
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
+  }
+  .pla{
+    font-size: 1rem;
+    margin:1.2rem;
   }
   .b-0{
     display:flex;
     flex-direction: column;
+    gap:5px;
+    margin: 10px;
   }
+  
   .b-1{order:1;
     margin-top:20px;
-    filter: brightness(70%);
+    filter: brightness(80%);
+    padding:30px;
   }
   .b-2{order:3;
-    filter: brightness(70%);
+    filter: brightness(80%);
+    padding:30px;
   }
   .b-3{order:2;
     border-radius: 0px;
-    filter: brightness(70%);
+    filter: brightness(80%);
+    padding:30px;
   }
-  .fo{margin-top:40px;
+  .fo{
+    margin:40px 0px 0px 0px!important;
     background-size:cover;
+    width:100%;
+    
   }
+input[type="email"]{
+  width:50%;
+}
   .fot{
     display: flex;
     flex-direction:column;
@@ -236,12 +263,11 @@ font-size:30px
   padding: 10px 0px;
 }
   }
-
-
-    </style>
-</head>
-<body>
-          <header class="nvar">
+</style>
+ </head>
+    
+    <body>
+      <header class="nvar">
         <div>
           <img src="logo.png">
         </div>
@@ -259,16 +285,16 @@ Cart ($56)</a>
         </nav>
         
       </header>
-                 <section class="fl ban">
+      <section class="fl ban">
           <div>
             <h1 class="sec">ALWAYS <span class="pri">FRESH<br> FLOWERS</span> </h1>
             <p class="thr">Indulge your senses with the beauty and fragrance of <br>our fresh flower shop. From classic roses to exotic<br> blooms, we offer a wide variety of fresh flowers that<br> are perfect for any occasion.</p>
           </div>
-          <div>
+          <div class="bit">
             <img src="hero-flower.png">
           </div>
         </section>
-     <section>
+        <section>
           <div class="our-part">
             <h1 class="sec"><span class="pri">Our</span> Plants</h1>
             <p class="thr">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br>classic roses to exotic blooms, we offer a wide variety of fresh.</p>
@@ -324,7 +350,7 @@ Cart ($56)</a>
           <button class="pr">ADD TO CART</button>
         </div>
       </section>
-     <div class="im">
+       <div class="im">
           <img src="trusted-badge.png">
         </div>
       <section class=" cha">
@@ -343,12 +369,12 @@ Cart ($56)</a>
       <section class="deal">
         <div>
           <h1><span class="pri">Latest</span> Deals</h1>
-          <p class="thr">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+          <p class="thr" style="text-align:cente;margin:0 auto;">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
         </div>
       </section>
       <section class="b-0">
         <div class="b-1">
-          <h4>60% Off | Bloom Plant</h4>
+          <h2>60% Off | Bloom Plant</h4>
           <p><u>Shop Now</u></p>
         </div>
          <div class="b-2">
@@ -356,19 +382,17 @@ Cart ($56)</a>
           <p><u>Shop Now</u></p>
         </div>
          <div class="b-3">
-           <h4>30% Off | Ana Plant</h4>
+           <h2>30% Off | Ana Plant</h4>
           <p><u>Shop Now</u></p>
         </div>
       </section>
-        <section>
-        
-       <div class="fo">
-        <div> <h1>Join the colorful Bunch</h1>
+      <section class="fo">
+        <div> 
+        <h1>Join the colorful Bunch</h1>
         </div>
       <div>   
       <input class="in" type="email" placeholder="Write email"><input class="pri ba in" type="submit" value="Subscribe">
          </div>
-       </div> 
       </section>
       <footer class="fot">
         <div>
@@ -391,11 +415,10 @@ Cart ($56)</a>
         </div>
         <div class="la">
           <img src="icon-linkedin.png">
-          <img src="icon-twitter.png">
+          <img style="padding-bottom:8px;"  src="icon-twitter.png">
           <img src="icon-facebook.png">
           <img src="icon-youtube.png">
         </div>
       </footer>
-      
-</body>
-</html>  
+    </body>
+</html>
