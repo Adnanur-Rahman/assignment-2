@@ -1,424 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style/flower.css">
+
     <title>Document</title>
-<style>
-body{margin:0px;}
-a{text-decoration: none;}
-  .pri{color:#E95A08;}
-  .sec{color:#000000;}
-  .thr{color: rgba(0, 0, 0, 0.5);
-;}
-.fl{display:flex;}
-.nvar{
-  display:flex;
-  justify-content:space-between;
-}
-.nvar2{
-  display:flex;
-  list-style: none;
-  gap:10px;
-}
-.nvar3{
-  align-items: center;
-  gap:10px;
-}
-  .ban{
-    text-align:left;
-    justify-content: center;
-    font-size: 30px;
-  }
-  .ban img{
-      width:100%;
-    height:100%;
-  }
-  .our-part{
-text-align:center;
-font-size:30px
-  }
-  .card{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:5px;
-    margin:0 auto;
-    margin-bottom:10px;
-    
-  }
-  .pr{
-    background-color:#E95A08 ;
-    color:white;
-    width:100%;
-    padding:10px;
-  }
-  .car{
-    text-align: center;
-    margin:2px;
-    padding:10px;
-  }
-  .car h2,h3{
-    margin:2px;
-  }
-  .car img{
-    width:100%;
-  }
-  .cha{
-    display:flex;
-    margin:0 auto;
-    width:100%;
-    font-size:1.8rem;
-    gap:3.1rem;
-    max-width:62.5rem;
-  }
+</head>
 
-  .im{
-    position:relative;
-    top:6rem;
-    left: 28rem;
-    z-index: 1;
-  }
-  
-  .im img{
-    width:12.5rem;
-    height:12.5rem;
-  }
-  
-  .cha > div img {
-  width: 40rem;
-  height: 30rem;
-  max-width: 400px;
-}
-
-.deal{
-  text-align:center;
-  font-size:30px;
-  margin-bottom: 20px;
-}
-.pla{
-  padding-right: 20px;
-  width:100%;
-  height:50%;
-  font-size: 20px;
-  gap:50px;
-}
-.b-0{
-  display:grid;
-  grid-template-columns:18.7rem 31.25rem;
-  gap:30px;
-  justify-content: center;
-  text-align: center;
-  color:white;
-  margin-bottom: 10px;
-  height:18.7rem;
-}
-.b-0 h2,.b-0 p{
-  margin: 0px;
-  padding:0px;
-}
-.b-1{
-  background-image: url('deal-bloom.png');
-  border-radius:20px ;
-  height:100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(90%);
-  align-content: center;
-}
-.b-3{
-  border:1px solid tomato;
-  background-image: url('deal-ana.png');
-  border-radius:10px ;
-  height:100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(90%);
-align-content: center;
-}
-.b-2{
-  background-image: url('deal-zabo.png');
-  grid-row:span 2;
-  border-radius:10px ;
-  align-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(90%);
-}
-.fo{
-  background-image: url('news-letter-bg.png');
-  text-align: center;
-  color:white;
-  padding:80px 0px;
-  width:100%;
-  margin:0px!important;
-}
-.ba{
-  background-color:#E95A08;
-  color:white;
-}
-.in{
-  margin:0px;
-  padding:10px 30px;
-}
-input[type="email"]{
-  width:35rem;
-}
-.fot{
-  list-style: none;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-  padding:20px 10px;
-}
-.fot li{
-  padding: 20px 0px;
-}
-.la img{
-  padding:0px 10px;
-}
-
-  @media screen and (max-width:576px)
-  {
-    .nvar2{
-      display:none;
-    }
-    .ban{
-      flex-direction: column-reverse;
-      font-size: 1rem;
-      width:90%;
-      margin:10px;
-    }
-    .our-part{
-      font-size:1rem;
-      
-    }
-    .prb{
-      max-width:576px;
-      margin:1.2rem;
-    }
-    .card{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-  }
-  .im{
-    display: none;
-  }
-  .cha{
-    flex-direction: column;
-    font-size:16px;
-    padding:0px;
-    margin:0px;
-    width:100%;
-  }
-.cha > div img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-}
-
-  .deal{
-    font-size: 1rem;
-    text-align: center;
-  }
-  .pla{
-    font-size: 1rem;
-    margin:1.2rem;
-  }
-  .b-0{
-    display:flex;
-    flex-direction: column;
-    gap:5px;
-    margin: 10px;
-  }
-  
-  .b-1{order:1;
-    margin-top:20px;
-    filter: brightness(80%);
-    padding:30px;
-  }
-  .b-2{order:3;
-    filter: brightness(80%);
-    padding:30px;
-  }
-  .b-3{order:2;
-    border-radius: 0px;
-    filter: brightness(80%);
-    padding:30px;
-  }
-  .fo{
-    margin:40px 0px 0px 0px!important;
-    background-size:cover;
-    width:100%;
-    
-  }
-input[type="email"]{
-  width:50%;
-}
-  .fot{
-    display: flex;
-    flex-direction:column;
-  }
-  .fot li{
-  padding: 10px 0px;
-}
-  }
-</style>
- </head>
-    
-    <body>
-      <header class="nvar">
+<body class="noto-serif-font">
+    <header class="nvar">
         <div>
-          <img src="logo.png">
+            <img src="logo.png">
         </div>
         <nav class="fl nvar3">
-          <ul class="nvar2">
-            <li> <b><a class="sec"href="https://www.google.com/">Home</a></b></li>
-            <li ><a class="thr" href="https://www.google.com/">Shop</a></li>
-            <li ><a class="thr" href="https://www.google.com/">About us</a></li>
-            
-          </ul>
-          <div>
-            <a class="sec" href="https://www.google.com/"><i class="fas fa-cart-shopping"></i>
-Cart ($56)</a>
-          </div>
+            <ul class="nvar2">
+                <li> <b><a class="sec" href="https://www.google.com/">Home</a></b></li>
+                <li><a class="thr inter-font" href="https://www.google.com/">Shop</a></li>
+                <li><a class="thr inter-font" href="https://www.google.com/">About us</a></li>
+
+            </ul>
+            <div>
+                <a class="sec" href="https://www.google.com/"><i class="fas fa-cart-shopping"></i>
+                    Cart ($56)</a>
+            </div>
         </nav>
-        
-      </header>
-      <section class="fl ban">
-          <div>
-            <h1 class="sec">ALWAYS <span class="pri">FRESH<br> FLOWERS</span> </h1>
-            <p class="thr">Indulge your senses with the beauty and fragrance of <br>our fresh flower shop. From classic roses to exotic<br> blooms, we offer a wide variety of fresh flowers that<br> are perfect for any occasion.</p>
-          </div>
-          <div class="bit">
+
+    </header>
+    <section class="fl ban">
+        <div>
+            <h1 class="sec">ALWAYS <span class="pri">FRESH FLOWERS</span> </h1>
+            <p class="thr inter-font" >Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any
+                occasion.</p>
+        </div>
+        <div class="bit">
             <img src="hero-flower.png">
-          </div>
-        </section>
-        <section>
-          <div class="our-part">
+        </div>
+    </section>
+    <section>
+        <div class="our-part">
             <h1 class="sec"><span class="pri">Our</span> Plants</h1>
-            <p class="thr">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br>classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-          </div>
-        </section>
-      <section class="card">
-        <div class="car">
-          <img src="sample-flower-image.png">
-          <h3>Lily Blossom</h3>
-          <h2><b>20 USD</b></h2>
-          <button class="pr">ADD TO CART</button>
+            <p class="thr inter-font">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                roses to exotic blooms, we offer a wide variety of fresh.</p>
         </div>
+    </section>
+    <section class="card">
         <div class="car">
-          <img src="sample-flower-image.png">
-          <h3>Lily Blossom</h3>
-          <h2><b>20 USD</b></h2>
-          <button class="pr">ADD TO CART</button>
+            <img src="sample-flower-image.png">
+            <h3  class="inter-font">Lily Blossom</h3 >
+            <h2 class="inter-font"><b>20 USD</b></h2>
+            <button class="pr inter-font">ADD TO CART</button>
         </div>
         <div class="car">
-          <img src="sample-flower-image.png">
-          <h3>Lily Blossom</h3>
-          <h2><b>20 USD</b></h2>
-          <button class="pr">ADD TO CART</button>
+            <img src="sample-flower-image.png">
+            <h3 class="inter-font">Lily Blossom</h3 >
+            <h2 class="inter-font"><b>20 USD</b></h2>
+            <button class="pr inter-font">ADD TO CART</button>
         </div>
         <div class="car">
-          <img src="sample-flower-image.png">
-          <h3>Lily Blossom</h3>
-          <h2><b>20 USD</b></h2>
-          <button class="pr">ADD TO CART</button>
+            <img src="sample-flower-image.png">
+            <h3 class="inter-font">Lily Blossom</h3 >
+            <h2 class="inter-font"><b>20 USD</b></h2>
+            <button class="pr inter-font">ADD TO CART</button>
         </div>
         <div class="car">
-          <img src="sample-flower-image.png">
-          <h3>Lily Blossom</h3>
-          <h2><b>20 USD</b></h2>
-          <button class="pr">ADD TO CART</button>
+            <img src="sample-flower-image.png">
+            <h3 class="inter-font">Lily Blossom</h3 >
+            <h2 class="inter-font"><b>20 USD</b></h2>
+            <button class="pr inter-font">ADD TO CART</button>
         </div>
         <div class="car">
-          <img src="sample-flower-image.png">
-          <h3>Lily Blossom</h3>
-          <h2><b>20 USD</b></h2>
-          <button class="pr">ADD TO CART</button>
+            <img src="sample-flower-image.png">
+            <h3 class="inter-font">Lily Blossom</h3 >
+            <h2 class="inter-font"><b>20 USD</b></h2>
+            <button class="pr inter-font">ADD TO CART</button>
         </div>
         <div class="car">
-          <img src="sample-flower-image.png">
-          <h3>Lily Blossom</h3>
-          <h2><b>20 USD</b></h2>
-          <button class="pr">ADD TO CART</button>
+            <img src="sample-flower-image.png">
+            <h3 class="inter-font">Lily Blossom</h3 >
+            <h2 class="inter-font"><b>20 USD</b></h2>
+            <button class="pr inter-font">ADD TO CART</button>
         </div>
+      
         <div class="car">
-          <img src="sample-flower-image.png">
-          <h3>Lily Blossom</h3>
-          <h2><b>20 USD</b></h2>
-          <button class="pr">ADD TO CART</button>
+            <img src="sample-flower-image.png">
+            <h3 class="inter-font">Lily Blossom</h3 >
+            <h2 class="inter-font"><b>20 USD</b></h2>
+            <button class="pr inter-font">ADD TO CART</button>
         </div>
-      </section>
-       <div class="im">
-          <img src="trusted-badge.png">
+      
+        <div class="car">
+            <img src="sample-flower-image.png">
+            <h3 class="inter-font">Lily Blossom</h3 >
+            <h2 class="inter-font"><b>20 USD</b></h2>
+            <button class="pr inter-font">ADD TO CART</button>
         </div>
-      <section class=" cha">
+      
+    </section>
+    <div class="im">
+        <img src="trusted-badge.png">
+    </div>
+    <section class=" cha">
         <div class="prb">
-          <img src="flower-store.png">
+            <img src="flower-store.png">
         </div>
         <div class="pla">
-          <h1>Flower & Plants<br> Lover</h1>
-          <ul class="thr">
-            <li>Indulge your senses with the beauty and<br> fragrance of our fresh flower shop. From classic<br> roses to exotic blooms, we offer a wide variety<br> of fresh.</li>
-            <li>Indulge your senses with the beauty and<br> fragrance of our fresh flower shop. From classic<br> roses to exotic blooms, we offer a wide variety<br> of fresh.</li>
-            <li>Indulge your senses with the beauty and <br>fragrance of our fresh flower shop. From classic<br> roses to exotic blooms, we offer a wide variety<br> of fresh.</li>
-          </ul>
+            <h1>Flower & Plants Lover</h1>
+            <ul class="thr inter-font">
+                <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                    roses to exotic blooms, we offer a wide variety of fresh.</li>
+                <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                    roses to exotic blooms, we offer a wide variety of fresh.</li>
+                <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
+                    roses to exotic blooms, we offer a wide variety of fresh.</li>
+            </ul>
         </div>
-      </section>
-      <section class="deal">
+    </section>
+    <section class="deal">
         <div>
-          <h1><span class="pri">Latest</span> Deals</h1>
-          <p class="thr" style="text-align:cente;margin:0 auto;">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+            <h1><span class="pri">Latest</span> Deals</h1>
+            <p class="thr inter-font" style="text-align:cente;margin:0 auto;">Indulge your senses with the beauty and fragrance of
+                our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
         </div>
-      </section>
-      <section class="b-0">
+    </section>
+    <section class="b-0">
         <div class="b-1">
-          <h2>60% Off | Bloom Plant</h4>
-          <p><u>Shop Now</u></p>
+            <h2>60% Off | Bloom Plant</h4>
+                <p><u>Shop Now</u></p>
         </div>
-         <div class="b-2">
-         <h2>25% Off | Zabo Plant</h4>
-          <p><u>Shop Now</u></p>
+        <div class="b-2">
+            <h2>25% Off | Zabo Plant</h4>
+                <p><u>Shop Now</u></p>
         </div>
-         <div class="b-3">
-           <h2>30% Off | Ana Plant</h4>
-          <p><u>Shop Now</u></p>
+        <div class="b-3">
+            <h2>30% Off | Ana Plant</h4>
+                <p><u>Shop Now</u></p>
         </div>
-      </section>
-      <section class="fo">
-        <div> 
-        <h1>Join the colorful Bunch</h1>
-        </div>
-      <div>   
-      <input class="in" type="email" placeholder="Write email"><input class="pri ba in" type="submit" value="Subscribe">
-         </div>
-      </section>
-      <footer class="fot">
+    </section>
+    <section class="fo">
         <div>
-          <img src="logo.png">
-          <p class="thr">Indulge your senses with the<br> beauty and fragrance of our fresh<br> flower shop.</p>
+            <h1>Join the colorful Bunch</h1>
         </div>
-        <div class="thr">
-          <li>Home</li>
-          <li>About us</li>
-          <li>Blog</li>
-          <li>FAQ</li>
-          <li>Contact Us</li>
+        <div>
+            <input class="in" type="email" placeholder="Write email"><input class="pri ba in" type="submit"
+                value="Subscribe">
         </div>
-        <div class="thr">
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Privacy Pollicy</li>
-          <li>Terms of Service</li>
-          <li>Help Centers</li>
+    </section>
+    <footer class="fot">
+        <div>
+            <img src="logo.png">
+            <p class="thr inter-font">Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
+        </div>
+        <div class="thr inter-font">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Blog</li>
+            <li>FAQ</li>
+            <li>Contact Us</li>
+        </div>
+        <div class="thr inter-font">
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Privacy Pollicy</li>
+            <li>Terms of Service</li>
+            <li>Help Centers</li>
         </div>
         <div class="la">
-          <img src="icon-linkedin.png">
-          <img style="padding-bottom:8px;"  src="icon-twitter.png">
-          <img src="icon-facebook.png">
-          <img src="icon-youtube.png">
+            <img src="icon-linkedin.png">
+            <img style="padding-bottom:8px;" src="icon-twitter.png">
+            <img src="icon-facebook.png">
+            <img src="icon-youtube.png">
         </div>
-      </footer>
-    </body>
+    </footer>
+</body>
+
 </html>
