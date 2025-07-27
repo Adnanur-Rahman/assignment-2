@@ -60,6 +60,118 @@
   .car img{
     width:100%;
   }
+    .cha{
+    border:1px solid tomato;
+    display:flex;
+    margin:0 auto;
+    width:100%;
+    font-size:1.8rem;
+    gap:3.1rem;
+    max-width:62.5rem;
+    
+  }
+
+  .im{
+    position:relative;
+    top:6rem;
+    left: 28rem;
+    z-index: 1;
+    
+  }
+    .im img{
+    width:12.5rem;
+    height:12.5rem;
+  }
+  
+  .cha > div img {
+  width: 40rem;
+  height: 30rem;
+  max-width: 400px;
+}
+
+.deal{
+  text-align:center;
+  font-size:30px;
+}
+.pla{
+  padding-right: 20px;
+  width:100%;
+  height:50%;
+  font-size: 20px;
+  gap:50px;
+}
+.b-0{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+  width:100%;
+  margin:0px auto;
+  text-align: center;
+  color:white;
+  margin-bottom: 10px;
+  height:300px;
+}
+.b-0 > h2,p{
+  margin: 0px;
+  padding:0px;
+}
+.b-1{
+  background-image: url('deal-bloom.png');
+  border-radius:20px ;
+  height:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(90%);
+}
+.b-3{
+  border:1px solid tomato;
+  background-image: url('deal-ana.png');
+  border-radius:10px ;
+  height:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(90%);
+}
+.b-2{
+  background-image: url('deal-zabo.png');
+  grid-row:span 2;
+  border-radius:10px ;
+  align-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(90%);
+}
+  .our-part{
+text-align:center;
+font-size:30px
+  }
+.fo{
+  background-image: url('news-letter-bg.png');
+  text-align: center;
+  color:white;
+  padding:20px 0px;
+}
+.ba{
+  background-color:#E95A08;
+  color:white;
+}
+.in{
+  margin:0px;
+  padding:0px;
+}
+.fot{
+  list-style: none;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  padding:20px 10px;
+}
+.fot li{
+  padding: 20px 0px;
+}
+.la img{
+  padding:0px 10px;
+}
 
 
     </style>
@@ -148,7 +260,78 @@ Cart ($56)</a>
           <button class="pr">ADD TO CART</button>
         </div>
       </section>
-   
-    
+     <div class="im">
+          <img src="trusted-badge.png">
+        </div>
+      <section class=" cha">
+        <div class="prb">
+          <img src="flower-store.png">
+        </div>
+        <div class="pla">
+          <h1>Flower & Plants<br> Lover</h1>
+          <ul class="thr">
+            <li>Indulge your senses with the beauty and<br> fragrance of our fresh flower shop. From classic<br> roses to exotic blooms, we offer a wide variety<br> of fresh.</li>
+            <li>Indulge your senses with the beauty and<br> fragrance of our fresh flower shop. From classic<br> roses to exotic blooms, we offer a wide variety<br> of fresh.</li>
+            <li>Indulge your senses with the beauty and <br>fragrance of our fresh flower shop. From classic<br> roses to exotic blooms, we offer a wide variety<br> of fresh.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="deal">
+        <div>
+          <h1><span class="pri">Latest</span> Deals</h1>
+          <p class="thr">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+        </div>
+      </section>
+      <section class="b-0">
+        <div class="b-1">
+          <h4>60% Off | Bloom Plant</h4>
+          <p><u>Shop Now</u></p>
+        </div>
+         <div class="b-2">
+         <h2>25% Off | Zabo Plant</h4>
+          <p><u>Shop Now</u></p>
+        </div>
+         <div class="b-3">
+           <h4>30% Off | Ana Plant</h4>
+          <p><u>Shop Now</u></p>
+        </div>
+      </section>
+        <section>
+        
+       <div class="fo">
+        <div> <h1>Join the colorful Bunch</h1>
+        </div>
+      <div>   
+      <input class="in" type="email" placeholder="Write email"><input class="pri ba in" type="submit" value="Subscribe">
+         </div>
+       </div> 
+      </section>
+      <footer class="fot">
+        <div>
+          <img src="logo.png">
+          <p class="thr">Indulge your senses with the<br> beauty and fragrance of our fresh<br> flower shop.</p>
+        </div>
+        <div class="thr">
+          <li>Home</li>
+          <li>About us</li>
+          <li>Blog</li>
+          <li>FAQ</li>
+          <li>Contact Us</li>
+        </div>
+        <div class="thr">
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Privacy Pollicy</li>
+          <li>Terms of Service</li>
+          <li>Help Centers</li>
+        </div>
+        <div class="la">
+          <img src="icon-linkedin.png">
+          <img src="icon-twitter.png">
+          <img src="icon-facebook.png">
+          <img src="icon-youtube.png">
+        </div>
+      </footer>
+      
 </body>
 </html>  
