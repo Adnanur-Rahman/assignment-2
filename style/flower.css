@@ -88,8 +88,9 @@ img {
 
     width: 35.62rem;
     height: 22.18rem;
-    padding-top: 6.62rem;
-
+    /* padding-top: 6.62rem; */
+    height: 100%;
+  
   }
 
   .ban2 {
