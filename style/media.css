@@ -1,0 +1,123 @@
+@media screen and (max-width:576px) {
+   .container {
+  max-width: 24.57rem;
+  margin: auto;
+}
+.nvar{
+    width: 90%;
+    margin-bottom:10rem;
+    margin-top: 1rem;
+}
+    .nvar2 {
+      display: none;
+    }
+
+    .ban {
+      flex-direction: column-reverse;
+      font-size: 1rem;
+      width: 100%;
+      
+    }
+    .bit img{
+        width: 100%;
+    }
+.ban2{
+    width: 42%;
+    margin: 0.62rem;
+}
+.ban3{
+    font-size: 200%;
+}
+.ban4{
+    font-size: 100%;
+}
+    .our-part {
+      font-size: 1rem;
+
+    }
+
+    .prb {
+      max-width: 576px;
+      margin: 1.2rem;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .im {
+      display: none;
+    }
+
+    .cha {
+      flex-direction: column;
+      font-size: 1rem;
+      padding: 0rem;
+      margin: 0rem;
+      width: 100%;
+    }
+
+    .cha>div img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .deal {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .pla {
+      font-size: 1rem;
+      margin: 1.2rem;
+    }
+
+    .b-0 {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin: 0.62rem;
+    }
+
+    .b-1 {
+      order: 1;
+      margin-top: 20px;
+      filter: brightness(80%);
+      padding: 1.87rem;
+    }
+
+    .b-2 {
+      order: 3;
+      filter: brightness(80%);
+      padding: 1.87rem;
+    }
+
+    .b-3 {
+      order: 2;
+      border-radius: 0rem;
+      filter: brightness(80%);
+      padding: 1.87rem;
+    }
+
+    .fo {
+      margin: 40px 0rem 0rem 0rem !important;
+      background-size: cover;
+      width: 100%;
+
+    }
+
+    input[type="email"] {
+      width: 50%;
+    }
+
+    .fot {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .fot li {
+      padding: 0.62rem 0rem;
+    }
+  }
