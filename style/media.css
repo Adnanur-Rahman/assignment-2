@@ -1,212 +1,215 @@
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    margin: auto;
+  }
 
-    .container {
-        max-width: 100%;
-        margin: auto;
-    }
+  .nvar {
+    width: 90%;
+    margin-bottom: 7rem;
+    margin-top: 1rem;
+  }
 
-    .nvar {
-        width: 90%;
-        margin-bottom: 7rem;
-        margin-top: 1rem;
-    }
+  .nvar2 {
+    display: none;
+  }
 
-    .nvar2 {
-        display: none;
-    }
+  .ban {
+    flex-direction: column-reverse;
+    font-size: 1rem;
+    width: 100%;
+  }
 
-    .ban {
-        flex-direction: column-reverse;
-        font-size: 1rem;
-        width: 100%;
+  .bit img {
+    width: 100%;
+  }
 
-    }
+  .ban2 {
+    width: 95%;
+    margin: 0.62rem;
+    padding-top: 1.5rem;
+    margin: 1rem;
+  }
 
-    .bit img {
-        width: 100%;
-    }
+  .ban3 {
+    font-size: 235%;
+    margin-bottom: 1rem;
+  }
 
-    .ban2 {
-        width: 95%;
-        margin: 0.62rem;
-        padding-top: 1.5rem;
-        margin: 1rem;
+  .ban4 {
+    font-size: 110%;
+  }
 
-    }
-
-    .ban3 {
-        font-size: 235%;
-        margin-bottom: 1rem;
-    }
-
-    .ban4 {
-        font-size: 110%;
-    }
-
-    .our-part {
-        font-size: 1rem;
-        width: 100%;
-        /* margin: 0.62rem;
+  .our-part {
+    font-size: 1rem;
+    width: 100%;
+    /* margin: 0.62rem;
         padding-top: 1.5rem;
         padding-bottom: 5rem; */
-        margin-bottom: 0rem;
-        margin-top: 4rem;
+    margin-bottom: 0rem;
+    margin-top: 4rem;
+  }
 
-    }
+  .op {
+    flex-direction: column-reverse;
+    font-size: 1rem;
+    width: 100%;
+    /* margin: 1rem; */
+    margin-bottom: 65rem;
+  }
 
-    .op {
-        flex-direction: column-reverse;
-        font-size: 1rem;
-        width: 100%;
-        /* margin: 1rem; */
-        margin-bottom: 65rem;
+  .op2 {
+    width: 90%;
+    margin: auto;
+    font-size: 1.2rem;
+  }
 
-    }
+  .prb {
+    max-width: 576px;
+    margin: 1.1rem;
+  }
 
-    .op2 {
-        width: 90%;
-        margin: 0rem;
-    }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 6rem;
+    margin-left: 2.2rem;
+    width: 90%;
+    gap: 1rem;
+  }
 
-    .prb {
-        max-width: 576px;
-        margin: 1.2rem;
-    }
+  .car {
+    width: 90%;
+  }
 
-    .card {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 6rem;
-        margin-left: 2.2rem;
-        width: 90%;
-        gap: 1rem;
-    }
+  .im {
+    display: none;
+  }
 
-    .car {
-        width: 90%;
-    }
+  .cha {
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 0rem;
+    margin: 0rem;
+    width: 100%;
+    margin-bottom: 35rem;
+  }
 
-    .im {
-        display: none;
-    }
+  .cha > div img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
 
-    .cha {
-        flex-direction: column;
-        font-size: 1rem;
-        padding: 0rem;
-        margin: 0rem;
-        width: 100%;
-        margin-bottom: 35rem;
-    }
+  .pla {
+    font-size: 1rem;
+    /* margin: 1.2rem; */
+    width: 90%;
+    margin-top: 0rem;
+  }
 
-    .cha>div img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-    }
+  .pla1 {
+    font-size: 230%;
+    height: 20%;
+    /* padding-bottom: 9rem; */
+  }
 
-    .pla {
-        font-size: 1rem;
-        /* margin: 1.2rem; */
-        width: 90%;
-        margin-top: 0rem;
-    }
+  .pla2 {
+    font-size: 130%;
+  }
 
-    .pla1 {
-        font-size: 230%;
-        height: 20%;
-        /* padding-bottom: 9rem; */
+  .cha > div ul {
+    list-style-position: outside;
+    padding-left: 23px;
+  }
 
-    }
+  .cha > div ul li {
+    padding-bottom: 1.5rem;
+    /* padding-left: 23px; */
+  }
 
-    .pla2 {
-        font-size: 130%;
-    }
-
-    .cha>div ul {
-        list-style-position: outside;
-        padding-left: 23px;
-    }
-
-    .cha>div ul li {
-        padding-bottom: 1.5rem;
-        /* padding-left: 23px; */
-    }
-
-    .deal {
-        font-size: 1rem;
-        text-align: center;
-        align-items: center;
-    }
-    .deal>div h1{
-        font-size: 200%;
-        padding-bottom: 1rem;
-    }
-        .deal>div p{
-        font-size: 100%;
-        text-align: center;
-        width: 70%;
-        margin-left: 4rem;
-    }
-    .b-0 {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        margin: 0.62rem;
-        height: 40rem;
-       
-    }
-    /* .b-1 h2{
+  .deal {
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+  .deal > div h1 {
+    font-size: 200%;
+    padding-bottom: 1rem;
+  }
+  .deal > div p {
+    font-size: 100%;
+    text-align: center;
+    width: 70%;
+    margin-left: 4rem;
+  }
+  .b-0 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0.62rem;
+    height: 40rem;
+  }
+  /* .b-1 h2{
 filter: brightness(100%);
     } */
-    .b-1 {
-        order: 1;
-        margin-top: 20px;
-        filter: brightness(50%);
-        padding: 1.87rem;
-        height: 50rem;
-        margin-bottom: 1rem;
-    }
+  .b-0 h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  .b-0 p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .b-1 {
+    order: 1;
+    margin-top: 20px;
+    padding: 1.87rem;
+    height: 50rem;
+    margin-bottom: 1rem;
+  }
 
+  .b-2 {
+    order: 3;
+    margin-bottom: 1rem;
+    height: 50rem;
+    padding: 1.87rem;
+  }
 
-    .b-2 {
-        order: 3;
-        filter: brightness(50%);
-        padding: 1.87rem;
-    }
+  .b-3 {
+    order: 2;
+    border-radius: 0rem;
+    padding: 1.87rem;
+    margin-bottom: 1rem;
+    height: 50rem;
+  }
 
-    .b-3 {
-        order: 2;
-        border-radius: 0rem;
-        filter: brightness(50%);
-        padding: 1.87rem;
-        margin-bottom: 1rem;
-        height: 50rem;
-    }
+  .fo {
+    margin: 40px 0rem 0rem 0rem !important;
+    background-size: cover;
+    width: 100%;
+  }
+  .fo h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
 
-    .fo {
-        margin: 40px 0rem 0rem 0rem !important;
-        background-size: cover;
-        width: 100%;
+  input[type="email"] {
+    width: 50%;
+  }
 
-    }
-    .fo h1{
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
+  .fot {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
 
-    input[type="email"] {
-        width: 50%;
-    }
-
-    .fot {
-        display: flex;
-        flex-direction: column;
-        margin-left: 2rem;
-        margin-top: 2rem;
-    }
-
-    .fot li {
-        padding: 0.62rem 0rem;
-    }
+  .fot li {
+    padding: 0.62rem 0rem;
+  }
+  .fot3 {
+    margin-top: -1rem;
+  }
 }
